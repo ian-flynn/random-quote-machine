@@ -1,4 +1,3 @@
-import './index.css';
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
@@ -38,9 +37,11 @@ return (
         <button className="button shift" id='new-quote' onClick={ newQuote }>New</button>
         <a
           className="button"
-          href={`https://twitter.com/intent/tweet?text=\"${randomQuote.text}\" \- ${randomQuote.author}`}
+          href={`https://twitter.com/intent/tweet?text="${randomQuote.text}" - ${randomQuote.author}`}
           target="_blank"
-          id='tweet-quote'><FontAwesomeIcon icon={faTwitter} className="bird" /></a>
+          id='tweet-quote'
+          rel="noreferrer"><FontAwesomeIcon icon={faTwitter} className="bird" />
+        </a>
           
       </div>
     </div> 
