@@ -87,6 +87,9 @@ body {
 }
 /* Phone Screens */
 @media all and (max-width: 550px) {
+  body {
+    max-height: 100vh;
+  }
   #quote-box {
     width: 90%;
     min-width: 300px;
