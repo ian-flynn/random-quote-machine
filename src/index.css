@@ -85,7 +85,7 @@ body {
   position: absolute;
   z-index: 0;
 }
-
+/* Phone Screens */
 @media all and (max-width: 550px) {
   #quote-box {
     width: 90%;
