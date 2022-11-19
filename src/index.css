@@ -18,6 +18,9 @@
   --fw-skinny: 200;
   --fw-reg: 400;
 }
+body {
+  background-color: var(--main-color);
+}
 #wrapper {
   display: flex;
   flex-direction: column;
@@ -25,7 +28,6 @@
   align-items: center;
   text-align: center;
   min-height: 100vh;
-  background-color: var(--main-color);
   position: relative;
 }
 .background-box {
