@@ -26,7 +26,6 @@ const newQuote = () => {
 
 return (
   <div id="wrapper">
-    <div className="background-box"></div>
     <div id="quote-box">
       <div className="quote-area">
         <div className="shape"></div>
@@ -42,11 +41,10 @@ return (
           id='tweet-quote'
           rel="noreferrer"><FontAwesomeIcon icon={faTwitter} className="bird" />
         </a>
-          
       </div>
     </div> 
+    <div className="background-box"></div>
   </div>
-    
 );
 }
 

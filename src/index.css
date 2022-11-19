@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -12,33 +12,24 @@
   --pink-color: #ECB390;
   --red-color: #DF7861;
   /* font variables */
-  --ff-primary: 'Spectral', serif;
-  --ff-secondary: 'Montserrat', sans-serif;
+  --ff-primary: 'Montserrat', sans-serif;
 
   --fw-skinny: 200;
   --fw-reg: 400;
 }
 body {
   background-color: var(--main-color);
+  font-family: var(--ff-primary);
 }
 #wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
   text-align: center;
-  min-height: 100vh;
-  position: relative;
 }
-.background-box {
-  background-color: var(--green-color);
-  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
-  width: 300px;
-  height: 500px;
-  position: absolute;
-  z-index: 0;
-  transition: transform 250ms ease-in-out;
-}
+
 #quote-box {
   width: 500px;
   background-color:var(--pink-color);
@@ -50,13 +41,11 @@ body {
 }
 #text {
   font-size: 2em;
-  font-family: var(--ff-secondary);
   font-weight: var(--fw-skinny);
   color: var(--main-color);
 }
 #author {
   font-size: 1.2em;
-  font-family: var(--ff-secondary);
   font-weight: var(--fw-reg);
   color: var(--green-color);
 }
@@ -66,7 +55,7 @@ body {
 }
 .button {
   font-size: 1.2em;
-  font-family: var(--ff-secondary);
+  font-family: var(--ff-primary);
   color: var(--main-color);
   background-color: var(--red-color);
   height: 75px;
@@ -86,5 +75,19 @@ body {
 }
 .shift {
   position: relative;
-  left: 18px;
+  left: 14px;
+}
+.background-box {
+  background-color: var(--green-color);
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+  width: 300px;
+  height: 500px;
+  position: absolute;
+  z-index: 0;
+}
+
+@media all and (max-width: 600px) {
+  body {
+    background-color: #DF7861;
+  }
 }
