@@ -86,8 +86,16 @@ body {
   z-index: 0;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 550px) {
   body {
     background-color: #DF7861;
+  }
+  #quote-box {
+    width: 90%;
+    min-width: 300px;
+  }
+  .background-box {
+    width: 54%;
+    min-width: 180px;
   }
 }
