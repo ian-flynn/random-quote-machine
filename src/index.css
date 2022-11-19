@@ -13,21 +13,25 @@
   --red-color: #DF7861;
   /* font variables */
   --ff-primary: 'Montserrat', sans-serif;
-
   --fw-skinny: 200;
   --fw-reg: 400;
 }
 body {
-  background-color: var(--main-color);
+  background-color: #c4c1e0;
   font-family: var(--ff-primary);
+
 }
 #wrapper {
+  /* background-color: #fdffcd; */
+  background-color: var(--main-color);
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   text-align: center;
+  margin: auto;
 }
 
 #quote-box {
