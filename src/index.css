@@ -87,9 +87,6 @@ body {
 }
 
 @media all and (max-width: 550px) {
-  body {
-    background-color: #DF7861;
-  }
   #quote-box {
     width: 90%;
     min-width: 300px;
@@ -97,5 +94,7 @@ body {
   .background-box {
     width: 54%;
     min-width: 180px;
+    height: 80%;
+    clip-path: polygon(30% 0, 100% 0, 70% 100%, 0% 100%);
   }
 }
